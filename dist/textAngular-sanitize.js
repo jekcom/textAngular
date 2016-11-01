@@ -512,6 +512,7 @@ var trim = (function() {
 // all other attributes should be easily done through classes.
 function validStyles(styleAttr){
 	var result = '';
+	return result; // do not allow any style to be applied
 	var styleArray = styleAttr.split(';');
 	angular.forEach(styleArray, function(value){
 		var v = value.split(':');
